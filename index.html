@@ -181,18 +181,18 @@ About my work can be found <a href="https://news.engineering.iastate.edu/2024/05
   
   <li> 
     <p style="font-size:115%;" align="justify">  
-      I worked as a Research Assistant under the supervision of <a href="http://class.ece.iastate.edu/arun/" target="_blank">Dr. Arun Somani</a> in the <a href="http://dcnl.ece.iastate.edu/dcnl/" target="_blank">Dependable Computing and Networking Laboratory</a> 
-      on topics related to Deep Learning, Computer Architecture and Parallel Computing <br><br>  
+      I am currently working as a Research Assistant under the supervision of <a href="https://www.engineering.iastate.edu/people/profile/gmani/" target="_blank"> Dr. Manimaran Govindarasu</a> in the PowerCyber Lab at Iowa State University, focusing on advanced topics 
+      in Cybersecurity, Machine Learning, and Federated Learning for Cyber-Physical Systems.<br><br> 
      </p>  
   </li>
   
   
   <li> 
     <p style="font-size:115%;" align="justify">  
-     I primarily worked at the intersection of Systems (Hardware Acceleration) and Deep Learning (Computer Vision) which include designing efficient
-      Neural Network algorithms (Pruning, Quantization and Neural Architecture Search) for processing on Special Purpose
-      Accelerators (TPU-like) and General Purpose devices (CPU, GPGPU). I also worked on different
-      problems (fault tolerance, memory accesses) with respect to special purpose DNN hardware
+      My research centers on developing cutting-edge Artificial Intelligence and Cybersecurity solutions for 
+      Anomaly and Intrusion Detection Systems, utilizing state-of-the-art techniques to enhance the security and reliability 
+      of Autonomous Vehicles, EV charging infrastructure, and DER communication against evolving cyber threats.
+      
   <br><br>
   </p>
   </li>
@@ -206,12 +206,11 @@ About my work can be found <a href="https://news.engineering.iastate.edu/2024/05
      
   <li>
      <big>
-    We developed “Hardware Dimension Aware Pruning” (HDAP) method for array-based accelerators, multi-core CPUs, and Tensor Core GPUs by considering the underlying dimension
-       of the system. In every pruning iteration, the HDAP algorithm prunes the number of nodes/filters in each layer based on the size of the underlying hardware 
-       in consideration. We achieve an average speedup of 3.2x, whereas the baseline achieves only 1.5x on Turing Tensor Core-enabled GPU. 
-       Our method attains an average speedup of 4.2x on the selected benchmarks on the Eyeriss hardware, whereas the baseline method attains only 1.6x.
-       [<a href="https://ieeexplore.ieee.org/document/9153267" target="_blank">Paper 1</a>]
-       [<a href="https://ieeexplore.ieee.org/abstract/document/9407921" target="_blank">Paper 2</a>] 
+    We developed a Federated Learning-based Anomaly Detection System (FL-ADS) to enhance the security of communication protocols (DNP3, Modbus) in DER networks. 
+    The system was designed to operate across decentralized data sources, maintaining privacy while achieving superior detection accuracy (above 97%) compared to baseline models. 
+    The methodology was tested on real-world datasets, demonstrating significant improvements in F1-scores and overall system resilience. 
+       <!-- [<a href="https://ieeexplore.ieee.org/document/9153267" target="_blank">Paper 1</a>]
+       [<a href="https://ieeexplore.ieee.org/abstract/document/9407921" target="_blank">Paper 2</a>]  -->
        
      </big>
   
@@ -220,75 +219,41 @@ About my work can be found <a href="https://news.engineering.iastate.edu/2024/05
 
    
   <li>
-    <big>  We designed “Fault and Array size based Pruning” (FPAP) algorithm with the intent of bypassing the faults and removing the internal redundancy at the same time for 
-    efficient inference. We compare our method with recent pruning methods under different fault scenarios and array sizes. We achieved a mean speedup of
-    4.2x, where the baselines achieved 1.6x on ConvNet, NiN, AlexNet, and VGG16 over Eyeriss in the case of random faults. 
-    [<a href="https://ieeexplore.ieee.org/abstract/document/9320358" target="_blank">Paper 1</a>]
-    [<a href="https://ieeexplore.ieee.org/document/8825141" target="_blank">Paper 2</a>]
+    <big>  We designed a hybrid methodology integrating Attack-Defense Trees (ADTs) and Game Theory to optimize cybersecurity investments for Electric Vehicle Charging Stations. 
+      The model utilized the CIA triad and the MITRE ATT&CK framework to identify and prioritize attack surfaces, enabling defenders to allocate resources efficiently. 
+      The approach was validated through various real-world scenarios, ensuring its applicability to large-scale EVCS deployments. 
+    [<a href="https://ieeexplore.ieee.org/document/10284670" target="_blank">Paper</a>]
+    <!-- [<a href="https://ieeexplore.ieee.org/document/8825141" target="_blank">Paper 2</a>] -->
     </big>
      </li> </br>
 
   
 <li>
-   <big>  We developed “Mixed Sparse and Precision Search (MSPS) method to search for the optimal weight matrix type (sparse or dense) and precision combination
-  for every layer of the pretrained model, such as ResNet50 which outperformed the manually designed Integer 8 ResNet50 network in terms of accuracy and
-  latency. We extended the MSPS method and designed the “Architecture, Sparsity, and Precision Search” (ASPS) algorithm to find better model hyperparameters, matrix type,
-  and precision in a single loop. The search method outperforms the manually tuned and automatically designed MSPS models on the ImageNet dataset. 
-  The best ASPS model is 1.1x faster and 0.57% more accurate than the baseline sparse-only Integer 8 ResNet50 model [<a href="https://dl.acm.org/doi/10.1145/3502181.3531463" target="_blank">Paper</a>] 
+   <big> This project was a collabration with <a href="https://www.anl.gov/" target="_blank">Argonne National Laboratory</a> where we designed and implemented FIRNet-G, an autonomous intelligent cyber defense system for power distribution grids. 
+    The system integrates federated learning and graph neural networks to detect and mitigate cyber threats in DNP3 traffic within a simulated multi-substation environment. 
+    The model was evaluated using the <a href="https://ieeexplore.ieee.org/document/7781277" target="_blank"> PowerCyber SCADA testbed </a>, demonstrating effective detection of cyber-attacks and providing a scalable solution for grid cybersecurity.
+ <!-- [<a href="https://dl.acm.org/doi/10.1145/3502181.3531463" target="_blank">Paper</a>]  -->
    
    </big>
      </li> </br>
 
 <li>
-<big> We designed “Array Aware Neural Architecture Search” (AANAS) method to automatically design efficient CNNs for a 
-  fixed array-based neural network accelerator. The previous Hardware-Aware Neural Architecture Search (HW-NAS) methods consider a fixed search
-  space for different hardware platforms and search within its predefined space. We designed the search space based on the underlying hardware array dimensions
-  to search for efficient CNN architectures for optimal inference performance.  [<a href="https://ieeexplore.ieee.org/document/9516612" target="_blank">Paper</a>] 
+<big> We developed a hybrid anomaly detection system combining rule-based techniques with deep neural networks to secure intra-vehicular communication networks. 
+  The system was specifically designed to prevent cyber-attacks on CAN-bus networks, achieving an accuracy of 95%. 
+  The enhanced journal version of this work improved accuracy to over 97% and reduced detection latency and the paper is currently under review.
+  [<a href="https://ieeexplore.ieee.org/abstract/document/9850292" target="_blank">Paper</a>] 
  </big>
      </li> </br>
 
 
 
-
-  
-
 <li>
-    <big> We conducted an in-depth and state-of-the-art review of several Hardware-aware Neural Architecture Search (NAS) algorithms for MCU, CPU (mobile and desktop), GPU (Edge and server-level),
-  ASIC, FPGA, ReRAM, DSP, and VPU platforms. We also reviewed hardware-aware mixed precision search algorithms and co-search methodologies of Neural algorithms and 
-  accelerators. The paper guides researchers in choosing the best possible algorithm for a given application and hardware [<a href="https://dl.acm.org/doi/10.1145/3524500" target="_blank">Paper</a>] </big>
+    <big> We developed an FL-based anomaly detection framework tailored for EV charging ecosystem, focusing on enhancing data privacy and cybersecurity. 
+      The system demonstrated high accuracy and resilience across EV charging datasets, supporting the secure operation of EVCS infrastructures.  
+      [<a href="https://ieeexplore.ieee.org/document/10637543" target="_blank">Paper</a>] 
+    </big>
 
      </li> </br>
-  
-
-<li>
-  <big>  We conducted an in-depth review of Neural Architecture Search techniques, targeting the Transformer model and its family of architectures, 
-  such as Bidirectional Encoder Representations from Transformers (BERT) and Vision Transformers.Transformer-based Deep Neural Network architectures 
-  have gained tremendous interest due to their effectiveness in various applications across Natural Language Processing (NLP) and Computer Vision (CV) domains [<a href="https://ieeexplore.ieee.org/document/9913476" target="_blank">Paper</a>] </big>
-     </li> </br>
-
-
-
-
-<li>
-  <big>  We conducted an in-depth review of Neural Architecture Search Benchmarks (NAS-Bench) by  investigating the necessity, types and challenges in a NAS benchmark design. 
-  A typical NAS benchmark consists of precomputed evaluation metrics, such as the validation accuracy, FLOPs, number of parameters, and latency on the hardware
-  of all the neural architectures present in the predefined search space. We also provide future directions in this fast growing space and the result of
-  our study in the growing field will assist the research community in developing a better next generation of NAS benchmarks [<a href="https://ieeexplore.ieee.org/document/10063950" target="_blank">Paper</a>] </big>
-     </li> </br>
-  
-
-
-
-<li>
-  <big>  We conducted a comprehensive survey of techniques for optimizing the inference phase of transformer models. We reviewed knowledge distillation, pruning, quantization,
-  neural architecture search and lightweight network design techniques at the algorithmic level and hardware
-  level optimization techniques for novel hardware accelerators for transformers. 
-  [<a href="https://arxiv.org/abs/2307.07982" target="_blank">Arxiv Paper</a>]
-  </big>
-     </li> </br>
-
-
-  
   
   
  </ol>   
@@ -323,6 +288,7 @@ About my work can be found <a href="https://news.engineering.iastate.edu/2024/05
 
 
   
+           
            
     
     
